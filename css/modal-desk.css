@@ -1,0 +1,148 @@
+.modal {
+    position: relative;
+    width: 27.11%;
+    max-width: 390px;
+    background-color: #ffffff;
+    z-index: 10;
+
+    padding: 54px 30px;
+}
+
+.modal__button-close {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.modal__button-close__span {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.modal__button-close__span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.modal__button-close__span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+
+.modal__title {
+    margin-bottom: 27px;
+}
+
+.modal__row-title {
+    color: #333333;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.modal__dropdown {
+    margin-top: 9px;
+    width: 100%;
+    height: 48px;
+    background-color: #f3f7f6;
+    padding-left: 17px;
+    padding-right: 17px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    font-size: 13px;
+    line-height: 22px;
+    color: #828383;
+
+    background-image: url('../images/popup-dropdown-arrows.svg');
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+}
+
+.modal__form-row {
+    margin-bottom: 25px;
+}
+
+.modal__input:hover {
+    cursor: pointer;
+}
+
+.modal__radio-groupe__control {
+    display: none;
+}
+
+.modal__radio-groupe__text {
+    margin-right: 17px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.modal__radio-groupe__text::before {
+    content: '';
+    border-radius: 50%;
+    border: 1px solid #bdaa6e;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.modal__radio-groupe__control:checked + .modal__radio-groupe__text::before {
+    background-color: #b59f5b;
+    outline: 2px solid #ffffff;
+    outline-offset: -3px;
+}
+
+.modal__textarea {
+    width: 100%;
+    height: 130px;
+    background-color: #f4f7f6;
+    padding: 20px;
+    margin-top: 12px;
+
+    font-size: 13px;
+    line-height: 22px;
+    color: #828383;
+    resize: none;
+}
+
+.modal__submit {
+    width: 100%;
+    height: 47px;
+    background-color: #b59f5b;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.modal__submit:hover {
+    background-color: #323232;
+}
+
+
+/* MASK FOR BODY */
+
+.mask__modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+._hidden {
+    display: none;
+    background: none;
+}
